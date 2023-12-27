@@ -1,0 +1,8 @@
+rust_binary {
+    name: "rodo",
+    srcs: ["src/main.rs"],
+    rustlibs: [
+        "liblogger",
+        "liblog_rust",
+    ],
+}
