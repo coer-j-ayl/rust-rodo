@@ -1,8 +1,18 @@
 rust_binary {
     name: "rodo",
-    srcs: ["src/main.rs"],
+    srcs: ["src/rodo.rs"],
     rustlibs: [
         "liblogger",
         "liblog_rust",
+    ],
+}
+
+rust_binary {
+    name: "kt",
+    srcs: ["src/kt.rs"],
+    rustlibs: [
+        "liblogger",
+        "liblog_rust",
+        "libclap",
     ],
 }
